@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SPTAudioStreamingDelegate
             
             userDefaults.synchronize()
             
-            NSNotificationCenter.defaultCenter().postNotificationName("loginSuccessful", object:nil)
+            NSNotificationCenter.defaultCenter().postNotificationName("loginSuccessfull", object:nil)
             
 //            if(userDefaults.boolForKey("premiumPurchased"))
             

@@ -12,10 +12,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="BYZ-38-t0r" customClass="ViewController" customModule="Hamster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -83,8 +83,12 @@
                                     <segue destination="U5b-D7-bWp" kind="presentation" id="Z0a-Xm-hta"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJw-Gc-idh">
-                                <rect key="frame" x="59" y="590" width="238" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJw-Gc-idh">
+                                <rect key="frame" x="68" y="591" width="238" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="7Ep-n5-yer"/>
+                                    <constraint firstAttribute="width" constant="238" id="FPn-38-sIX"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="log_in-mobile"/>
                                 <connections>
                                     <action selector="loginWithSpotify:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIo-ka-6rs"/>
@@ -105,27 +109,24 @@
                             <constraint firstAttribute="trailingMargin" secondItem="LlV-4P-q1p" secondAttribute="trailing" constant="-22" id="KHb-AB-D0h"/>
                             <constraint firstItem="ZuB-P2-f29" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KMn-jj-0Mk"/>
                             <constraint firstItem="Utz-1n-VZx" firstAttribute="top" secondItem="Ksz-jE-0GX" secondAttribute="bottom" constant="8" symbolic="YES" id="L4k-g3-MH5"/>
+                            <constraint firstItem="PJw-Gc-idh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LPy-FW-voQ"/>
                             <constraint firstItem="t0p-4P-XWG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="NQG-9I-xFy"/>
                             <constraint firstItem="fth-IP-Dhv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="ODg-It-W08"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fth-IP-Dhv" secondAttribute="bottom" id="QfC-rc-Uer"/>
                             <constraint firstItem="fth-IP-Dhv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="UtL-9h-FTf"/>
                             <constraint firstItem="ZuB-P2-f29" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V3I-CC-Co1"/>
                             <constraint firstItem="t0p-4P-XWG" firstAttribute="centerX" secondItem="Utz-1n-VZx" secondAttribute="centerX" id="ViY-nr-QCT"/>
-                            <constraint firstItem="PJw-Gc-idh" firstAttribute="top" secondItem="LlV-4P-q1p" secondAttribute="bottom" constant="38" id="aoR-Za-yau"/>
                             <constraint firstItem="Ksz-jE-0GX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="bME-2J-2Km"/>
                             <constraint firstItem="ZuB-P2-f29" firstAttribute="leading" secondItem="LlV-4P-q1p" secondAttribute="leading" id="ilm-2l-YqG"/>
                             <constraint firstItem="Utz-1n-VZx" firstAttribute="trailing" secondItem="Z9g-Ul-4od" secondAttribute="trailing" id="ivb-3N-cdz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PJw-Gc-idh" secondAttribute="bottom" constant="34" id="nVV-KG-T7f"/>
                             <constraint firstItem="dnD-PX-oQL" firstAttribute="top" secondItem="Utz-1n-VZx" secondAttribute="bottom" constant="20" id="na4-i5-GQZ"/>
+                            <constraint firstItem="PJw-Gc-idh" firstAttribute="top" secondItem="LlV-4P-q1p" secondAttribute="bottom" constant="39" id="ogg-eH-OJs"/>
                             <constraint firstItem="LlV-4P-q1p" firstAttribute="top" secondItem="t0p-4P-XWG" secondAttribute="bottom" constant="40" id="pZ4-AG-dqx"/>
-                            <constraint firstItem="PJw-Gc-idh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTK-Tn-yY5"/>
                             <constraint firstItem="ZuB-P2-f29" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="r6b-xm-qiF"/>
                             <constraint firstItem="Utz-1n-VZx" firstAttribute="leading" secondItem="Z9g-Ul-4od" secondAttribute="leading" id="sT0-9H-zJi"/>
                             <constraint firstItem="Ksz-jE-0GX" firstAttribute="leading" secondItem="dnD-PX-oQL" secondAttribute="leading" id="ssC-J5-8gx"/>
                             <constraint firstItem="Z9g-Ul-4od" firstAttribute="top" secondItem="dnD-PX-oQL" secondAttribute="bottom" constant="8" symbolic="YES" id="uLD-OC-YXa"/>
-                            <constraint firstItem="PJw-Gc-idh" firstAttribute="leading" secondItem="t0p-4P-XWG" secondAttribute="leading" id="ufR-od-ZQA"/>
                             <constraint firstItem="ZuB-P2-f29" firstAttribute="centerX" secondItem="Utz-1n-VZx" secondAttribute="centerX" id="wdY-ic-XjE"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PJw-Gc-idh" secondAttribute="bottom" constant="34" id="xKG-wv-Gyb"/>
                             <constraint firstItem="dpL-Bi-dbV" firstAttribute="top" secondItem="Z9g-Ul-4od" secondAttribute="bottom" constant="23" id="zZm-aN-Mf5"/>
                         </constraints>
                     </view>
@@ -138,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="-7.2000000000000002" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Playlist-->
         <scene sceneID="ujz-xV-dqp">
             <objects>
-                <viewController id="U5b-D7-bWp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlaylistViewController" title="Playlist" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U5b-D7-bWp" customClass="selectPlaylistVC" customModule="Hamster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dZS-Nh-0CO"/>
                         <viewControllerLayoutGuide type="bottom" id="Ek6-Vf-ZdE"/>
@@ -153,14 +154,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Bxy-0f-4Bt">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT YOUR PLAYLISTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMS-Am-300">
-                                <rect key="frame" x="34" y="57" width="307" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT YOUR PLAYLIST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMS-Am-300">
+                                <rect key="frame" x="41" y="57" width="293" height="32"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="27"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vnw-Wz-9gF">
-                                <rect key="frame" x="34" y="125" width="307" height="444"/>
+                                <rect key="frame" x="41" y="125" width="293" height="444"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
@@ -201,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="735" y="135"/>
         </scene>
-        <!--Title-->
+        <!--Pace-->
         <scene sceneID="Kvz-K3-hma">
             <objects>
-                <viewController id="zMQ-t6-Ala" sceneMemberID="viewController">
+                <viewController title="Pace" id="zMQ-t6-Ala" customClass="enterPaceVC" customModule="Hamster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dxf-rn-kK1"/>
                         <viewControllerLayoutGuide type="bottom" id="qSX-ro-e8A"/>
@@ -272,7 +273,7 @@
                                 <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE YOUR PACE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaC-he-hVS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER YOUR PACE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaC-he-hVS">
                                 <rect key="frame" x="53" y="142" width="269" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Isl-ts-ecK"/>
@@ -358,10 +359,10 @@
             </objects>
             <point key="canvasLocation" x="2165.5999999999999" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Run-->
         <scene sceneID="9dN-9o-IlM">
             <objects>
-                <viewController id="pX5-YC-9eI" sceneMemberID="viewController">
+                <viewController title="Run" id="pX5-YC-9eI" customClass="runVC" customModule="Hamster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eNL-Ab-xJJ"/>
                         <viewControllerLayoutGuide type="bottom" id="os1-kO-VjL"/>
@@ -427,10 +428,10 @@
             </objects>
             <point key="canvasLocation" x="2876" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Genres-->
         <scene sceneID="RYD-l2-WWv">
             <objects>
-                <viewController id="16x-a3-0Gg" sceneMemberID="viewController">
+                <viewController title="Genres" id="16x-a3-0Gg" customClass="hatedGenresVC" customModule="Hamster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gl8-9s-zgP"/>
                         <viewControllerLayoutGuide type="bottom" id="EKK-ix-GEU"/>

@@ -11,6 +11,10 @@
 		9B64C8771DD7F8A6008C7F75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B64C8761DD7F8A6008C7F75 /* AVFoundation.framework */; };
 		9B64C8791DD7F8B9008C7F75 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B64C8781DD7F8B9008C7F75 /* SystemConfiguration.framework */; };
 		9B64C87B1DD8343B008C7F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B64C87A1DD8343B008C7F75 /* Main.storyboard */; };
+		9B64C87F1DD849F1008C7F75 /* selectPlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B64C87E1DD849F1008C7F75 /* selectPlaylistVC.swift */; };
+		9B64C8811DD84A0D008C7F75 /* hatedGenresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B64C8801DD84A0D008C7F75 /* hatedGenresVC.swift */; };
+		9B64C8831DD84A37008C7F75 /* enterPaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B64C8821DD84A37008C7F75 /* enterPaceVC.swift */; };
+		9B64C8851DD84A4F008C7F75 /* runVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B64C8841DD84A4F008C7F75 /* runVC.swift */; };
 		F461242E1DD7C998004D5A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461242D1DD7C998004D5A11 /* AppDelegate.swift */; };
 		F46124301DD7C998004D5A11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461242F1DD7C998004D5A11 /* ViewController.swift */; };
 		F46124351DD7C998004D5A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46124341DD7C998004D5A11 /* Assets.xcassets */; };
@@ -42,6 +46,10 @@
 		9B64C8761DD7F8A6008C7F75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9B64C8781DD7F8B9008C7F75 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9B64C87A1DD8343B008C7F75 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9B64C87E1DD849F1008C7F75 /* selectPlaylistVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectPlaylistVC.swift; sourceTree = "<group>"; };
+		9B64C8801DD84A0D008C7F75 /* hatedGenresVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hatedGenresVC.swift; sourceTree = "<group>"; };
+		9B64C8821DD84A37008C7F75 /* enterPaceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enterPaceVC.swift; sourceTree = "<group>"; };
+		9B64C8841DD84A4F008C7F75 /* runVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = runVC.swift; sourceTree = "<group>"; };
 		F461242A1DD7C998004D5A11 /* Hamster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F461242D1DD7C998004D5A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F461242F1DD7C998004D5A11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,12 +127,16 @@
 			isa = PBXGroup;
 			children = (
 				9B64C87A1DD8343B008C7F75 /* Main.storyboard */,
+				9B64C8841DD84A4F008C7F75 /* runVC.swift */,
 				9B64C8741DD7E1E8008C7F75 /* SpotifyDemo-Bridging-Header.h */,
 				F461242D1DD7C998004D5A11 /* AppDelegate.swift */,
 				F461242F1DD7C998004D5A11 /* ViewController.swift */,
 				F46124341DD7C998004D5A11 /* Assets.xcassets */,
 				F46124361DD7C998004D5A11 /* LaunchScreen.storyboard */,
 				F46124391DD7C998004D5A11 /* Info.plist */,
+				9B64C87E1DD849F1008C7F75 /* selectPlaylistVC.swift */,
+				9B64C8801DD84A0D008C7F75 /* hatedGenresVC.swift */,
+				9B64C8821DD84A37008C7F75 /* enterPaceVC.swift */,
 			);
 			path = Hamster;
 			sourceTree = "<group>";
@@ -281,7 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B64C8831DD84A37008C7F75 /* enterPaceVC.swift in Sources */,
+				9B64C87F1DD849F1008C7F75 /* selectPlaylistVC.swift in Sources */,
+				9B64C8851DD84A4F008C7F75 /* runVC.swift in Sources */,
 				F46124301DD7C998004D5A11 /* ViewController.swift in Sources */,
+				9B64C8811DD84A0D008C7F75 /* hatedGenresVC.swift in Sources */,
 				F461242E1DD7C998004D5A11 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

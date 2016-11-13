@@ -42,7 +42,8 @@ SPTAudioStreamingPlaybackDelegate {
                         userDefaults.synchronize()
                         
                         self.session = renewdSession
-                        self.playUsingSession(renewdSession)
+                       // self.playUsingSession(renewdSession)
+                        self.showNextVC()
                     }else{
                         print("error refreshing session")
                     }
@@ -50,7 +51,8 @@ SPTAudioStreamingPlaybackDelegate {
             }else{
                 print("session valid")
                 self.session = session
-                playUsingSession(session)
+                self.showNextVC()
+               // playUsingSession(session)
             }
             
             
@@ -69,15 +71,24 @@ SPTAudioStreamingPlaybackDelegate {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         
         if let sessionObj:AnyObject = userDefaults.objectForKey("SpotifySession") {
-            let sessionDataObj = sessionObj as! NSData
-            let firstTimeSession = NSKeyedUnarchiver.unarchiveObjectWithData(sessionDataObj) as! SPTSession
-            self.session = firstTimeSession
-            playUsingSession(firstTimeSession)
+//            let sessionDataObj = sessionObj as! NSData
+//            let firstTimeSession = NSKeyedUnarchiver.unarchiveObjectWithData(sessionDataObj) as! SPTSession
+//            self.session = firstTimeSession
+//            playUsingSession(firstTimeSession)
+            
+           showNextVC()
             
         }
         
     }
     
+    func showNextVC(){
+        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("PlaylistViewController")
+        self.showViewController(vc as! UIViewController, sender: vc)
+        
+      //  self.presentViewController(vc as! UIViewController, animated: true, completion: nil)
+        
+    }
     
     func playUsingSession(sessionObj:SPTSession!){
         if player == nil {
